@@ -36,6 +36,11 @@ Follow these steps to run the project locally:
 ### 1. Clone the repository
 
 ```bash
-git clone [https://github.com/hypnotize1/todo-api-express.git](https://github.com/hypnotize1/todo-api-express.git)
+git clone https://github.com/hypnotize1/todo-api-express.git
 cd todo-api-express
+
+2. Install dependencies
+npm install
+
+
 ```
