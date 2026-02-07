@@ -4,7 +4,11 @@ import cors from "cors";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
 import dotenv from "dotenv";
-import joi, { object } from "joi";
+import joi from "joi";
+
+import swaggerUi from "swagger-ui-express";
+import swaggerJSDoc from "swagger-jsdoc";
+import { swaggerOptions } from "./configs/swagger.js";
 
 // read .env file
 dotenv.config();
@@ -18,6 +22,9 @@ app.use(cors());
 // express.json() middleware get chunks , collect, translate with Json.parse(), link to req.body
 //
 app.use(express.json());
+
+const swaggerSpec = swaggerJSDoc(swaggerOptions);
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 // (C)reate: create new user (signup)
 // POST /api/auth/register
