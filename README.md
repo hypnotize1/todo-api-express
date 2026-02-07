@@ -38,9 +38,38 @@ Follow these steps to run the project locally:
 ```bash
 git clone https://github.com/hypnotize1/todo-api-express.git
 cd todo-api-express
-
-2. Install dependencies
-npm install
-
-
 ```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure Environment Variables
+
+```bash
+Create a .env file in the root directory and add your configuration:
+PORT=3000
+DATABASE_URL="postgresql://USER:PASSWORD@localhost:5432/todo_db?schema=public"
+JWT_SECRET="your_super_secret_key"
+```
+
+### 4. Run Database Migrations
+
+```bash
+Create the tables in your database:
+npx prisma migrate dev
+```
+
+### 5. Start the Server
+
+```bash
+5. Start the Server
+```
+
+## 📖 API Documentation
+
+After starting the server, you can access the full API documentation at:
+
+👉 http://localhost:3000/api-docs
