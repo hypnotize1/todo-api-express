@@ -65,11 +65,11 @@ npx prisma migrate dev
 ### 5. Start the Server
 
 ```bash
-5. Start the Server
+npm run dev
 ```
 
 ## 📖 API Documentation
 
 After starting the server, you can access the full API documentation at:
 
-👉 http://localhost:3000/api-docs
+👉``` http://localhost:3000/api-docs
