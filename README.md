@@ -69,7 +69,7 @@ npm run dev
 ```
 
 ## 📖 API Documentation
-
+```bash
 After starting the server, you can access the full API documentation at:
-
 👉``` http://localhost:3000/api-docs
+```
